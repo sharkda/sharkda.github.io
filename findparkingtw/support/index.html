@@ -25,7 +25,8 @@
   h1{font-size:1.6rem; line-height:1.35; margin:0 0 .35rem}
   h1 .en{display:block; font-size:.95rem; font-weight:600; color:var(--muted); letter-spacing:.01em; margin-top:.2rem}
   .tagline{color:var(--muted); margin:0}
-  .langbar{display:flex; justify-content:flex-end; margin-bottom:.75rem}
+  .langbar{display:flex; justify-content:space-between; gap:.5rem; margin-bottom:.75rem}
+  .langbar a.home{color:var(--muted)}
   .langbar a{font-size:.9rem; color:var(--link); text-decoration:none; border:1px solid var(--line); border-radius:.4rem; padding:.3rem .65rem}
   h2{font-size:1.2rem; margin:2.5rem 0 .75rem; padding-top:.5rem}
   h3{font-size:1rem; margin:1.5rem 0 .4rem}
@@ -49,7 +50,10 @@
 <body>
 <div class="wrap">
 
-<div class="langbar"><a href="#english">English ↓</a></div>
+<div class="langbar">
+  <a class="home" href="../../">← 找車位 首頁 / Home</a>
+  <a href="#english">English ↓</a>
+</div>
 
 <header>
   <h1>找車位 — 支援<span class="en">Find Parking TW — Support</span></h1>
