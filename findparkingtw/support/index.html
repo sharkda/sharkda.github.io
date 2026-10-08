@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Find Parking TW (找車位) — Support</title>
-<meta name="description" content="Support page for Find Parking TW (找車位), a live parking-space app for Taipei City and New Taipei City.">
+<title>找車位 Find Parking TW — 支援 / Support</title>
+<meta name="description" content="找車位（Find Parking TW）支援頁面 — 臺北市與新北市即時停車位資訊。Support page for Find Parking TW, a live parking-space app for Taipei City and New Taipei City.">
 <style>
   :root{
     --bg:#ffffff; --fg:#1b1b1f; --muted:#5d5d66; --line:#e3e3e8;
@@ -17,22 +17,22 @@
   *{box-sizing:border-box}
   body{
     margin:0; background:var(--bg); color:var(--fg);
-    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Helvetica,Arial,sans-serif;
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei","Segoe UI",Helvetica,Arial,sans-serif;
     -webkit-text-size-adjust:100%;
   }
   .wrap{max-width:46rem; margin:0 auto; padding:2.5rem 1rem 4rem}
   header{border-bottom:1px solid var(--line); padding-bottom:1.25rem; margin-bottom:2rem}
-  h1{font-size:1.6rem; line-height:1.3; margin:0 0 .35rem}
-  h1 .zh{font-weight:600}
+  h1{font-size:1.6rem; line-height:1.35; margin:0 0 .35rem}
+  h1 .en{display:block; font-size:.95rem; font-weight:600; color:var(--muted); letter-spacing:.01em; margin-top:.2rem}
   .tagline{color:var(--muted); margin:0}
+  .langbar{display:flex; justify-content:flex-end; margin-bottom:.75rem}
+  .langbar a{font-size:.9rem; color:var(--link); text-decoration:none; border:1px solid var(--line); border-radius:.4rem; padding:.3rem .65rem}
   h2{font-size:1.2rem; margin:2.5rem 0 .75rem; padding-top:.5rem}
   h3{font-size:1rem; margin:1.5rem 0 .4rem}
   p,li{margin:.55rem 0}
   a{color:var(--link)}
-  .btn{
-    display:inline-block; background:var(--accent); color:var(--accent-fg);
-    padding:.7rem 1.15rem; border-radius:.55rem; text-decoration:none; font-weight:600;
-  }
+  .btn{display:inline-block; background:var(--accent); color:var(--accent-fg);
+       padding:.7rem 1.15rem; border-radius:.55rem; text-decoration:none; font-weight:600}
   .btn.secondary{background:transparent; color:var(--link); border:1px solid var(--line)}
   .btns{display:flex; flex-wrap:wrap; gap:.6rem; margin:1rem 0}
   .card{background:var(--card); border:1px solid var(--line); border-radius:.7rem; padding:1.1rem 1.2rem; margin:1.25rem 0}
@@ -40,103 +40,106 @@
   .note{color:var(--muted); font-size:.92rem}
   hr{border:0; border-top:1px solid var(--line); margin:3rem 0 2rem}
   dt{font-weight:600; margin-top:1.1rem}
-  dd{margin:.25rem 0 0; color:var(--fg)}
+  dd{margin:.25rem 0 0}
   footer{margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem}
-  .zh-section{margin-top:1rem}
-  code{background:var(--card); padding:.1rem .3rem; border-radius:.25rem; font-size:.9em}
+  .en-section{margin-top:1rem}
+  .en-section h2:first-child{margin-top:0}
 </style>
 </head>
 <body>
 <div class="wrap">
 
+<div class="langbar"><a href="#english">English ↓</a></div>
+
 <header>
-  <h1>Find Parking TW <span class="zh">找車位</span> — Support</h1>
-  <p class="tagline">Live parking-space counts for <strong>Taipei City</strong> and <strong>New Taipei City</strong>, straight from the city governments' open-data platforms.</p>
+  <h1>找車位 — 支援<span class="en">Find Parking TW — Support</span></h1>
+  <p class="tagline"><strong>臺北市</strong>與<strong>新北市</strong>的即時停車位數量，資料直接來自兩市政府的開放資料平臺。</p>
 </header>
 
-<h2>Get help</h2>
+<h2>聯絡我們</h2>
 
-<p>The fastest way to reach us is the contact form. It goes straight to the developer.</p>
+<p>最快的方式是填寫聯絡表單，訊息會直接送到開發者手上。</p>
 
 <div class="btns">
-  <a class="btn" href="https://jimhsuyc.wixsite.com/tataro/support">Contact form →</a>
-  <a class="btn secondary" href="https://www.facebook.com/tataroApp">Facebook (for screenshots &amp; video)</a>
+  <a class="btn" href="https://jimhsuyc.wixsite.com/tataro/support">聯絡表單 →</a>
+  <a class="btn secondary" href="https://www.facebook.com/tataroApp">Facebook（傳截圖與錄影）</a>
 </div>
 
-<p class="note">Use the form for anything you can describe in words. If you need to attach a <strong>screenshot or a screen recording</strong> — which is the most useful thing you can send about a wrong parking count — send it through the Facebook page instead, since the form cannot take files.</p>
+<p class="note">文字說明請用表單。若要附上<strong>截圖或螢幕錄影</strong>——回報車位數字有誤時，這是最有用的東西——請改用 Facebook 粉絲頁，表單無法上傳檔案。</p>
 
 <div class="card" id="request-a-city">
-  <h3 style="margin-top:0">Want your city covered?</h3>
-  <p>Right now the app has live data for <strong>Taipei City and New Taipei City only</strong>. Outside those two, it has nothing to show yet — and that is a gap, not a bug.</p>
-  <p><strong>Tell us where you need it.</strong> We rank which city to add next by how many people ask for it, so a single message genuinely counts.</p>
-  <div class="btns"><a class="btn" href="https://jimhsuyc.wixsite.com/tataro/support">Request a city →</a></div>
+  <h3 style="margin-top:0">希望加入你的城市？</h3>
+  <p>目前只有<strong>臺北市與新北市</strong>有即時資料，其他地區還沒有資料可以顯示。這是還沒做到，不是壞掉。</p>
+  <p><strong>請告訴我們你需要哪裡。</strong>我們依照提出的人數決定下一個開通的城市，所以一則訊息是真的有用。</p>
+  <div class="btns"><a class="btn" href="https://jimhsuyc.wixsite.com/tataro/support">告訴我們你需要的城市 →</a></div>
 </div>
 
-<h2>Before you write — the five things people ask</h2>
+<h2>寫信之前 — 大家最常問的五件事</h2>
 
 <dl>
-  <dt>A number has not changed in a while. Is the app stuck?</dt>
-  <dd>Almost certainly not. <strong>The app does not count spaces itself</strong> — it shows what the city government publishes. When a city's feed goes quiet, the number sits still, and the app says so rather than hiding it: a fresh count is shown in <strong>green</strong>, and an aging or stale one <strong>fades to grey</strong>. Colour on that big number means <em>freshness</em>, and its size means <em>how few spaces are left</em>.</dd>
+  <dt>數字很久沒變，是不是壞了？</dt>
+  <dd>通常不是。<strong>數字不是我們數的</strong>，而是市政府公布的。當市府的資料停止更新，數字就會停住，而 App 會老實告訴你：剛更新的數字是<strong>綠色</strong>，開始過時的會<strong>轉為灰色</strong>。那個大數字的<strong>顏色代表新鮮度</strong>，<strong>字級大小代表剩的位子有多少</strong>。</dd>
 
-  <dt>A car park shows “−” or no number at all.</dt>
-  <dd>That lot is in the city's list but is <strong>not reporting a live count</strong>. It is usually a lot whose operator is mid-handover, and it tends to come back on its own. The app shows it rather than dropping it, so you know the lot exists.</dd>
+  <dt>某個停車場顯示「−」或沒有數字。</dt>
+  <dd>表示該停車場在市府名單內，但<strong>沒有回報即時數量</strong>，多半是營運單位正在交接，通常會自行恢復。我們選擇照樣顯示，讓你知道這個停車場存在。</dd>
 
-  <dt>I am not in Taipei yet. Can I still see how it works?</dt>
-  <dd>Yes. Pick a <strong>destination</strong> and the whole app works from there — map, search and your watch list — before you ever arrive. You do not have to be standing in the city.</dd>
+  <dt>我還沒到臺北，可以先看看嗎？</dt>
+  <dd>可以。選一個<strong>目的地</strong>，地圖、搜尋與追蹤清單都會以該地運作，不必人在當地。</dd>
 
-  <dt>Why does it want my location?</dt>
-  <dd>Only to show what is near you. It is used <strong>while the app is open and not otherwise</strong>, it is never used to track you or build a profile, and you can decline it and still use the app by searching or picking a destination. Details: <a href="https://jimhsuyc.wixsite.com/tataro/privacy-policy">privacy policy</a>.</dd>
+  <dt>為什麼需要定位？</dt>
+  <dd>只為了顯示你附近的停車場。<strong>僅在使用 App 時取用</strong>，絕不用於追蹤或建立個人輪廓；你也可以拒絕定位，改用搜尋或指定目的地。詳見<a href="https://jimhsuyc.wixsite.com/tataro/privacy-policy">隱私權政策</a>。</dd>
 
-  <dt>Can I remove the ads?</dt>
-  <dd>Yes — a subscription turns off the banner. It is the only thing a subscription changes; every other feature is the same either way.</dd>
+  <dt>可以移除廣告嗎？</dt>
+  <dd>可以，訂閱後會關閉廣告橫幅。這也是訂閱唯一改變的事，其他功能訂不訂閱都一樣。</dd>
 </dl>
 
-<h2>Reporting something wrong</h2>
-<p>If a count looks wrong, the most useful message names <strong>the car park</strong>, <strong>roughly when</strong> you looked, and <strong>what you actually found</strong> when you got there. A screenshot through the Facebook page beats all of it. Counts that are wrong <em>at the source</em> are worth telling us about too — we pass those to the city.</p>
+<h2>回報資料有誤</h2>
+<p>如果數字看起來不對，最有幫助的訊息包含：<strong>哪一個停車場</strong>、<strong>大約什麼時候看的</strong>，以及<strong>你到現場時實際的情況</strong>。附上截圖更好。若是<strong>資料來源本身</strong>就有誤，也歡迎告訴我們，我們會轉達給主管機關。</p>
 
 <hr>
 
-<section class="zh-section" lang="zh-Hant">
-  <h2>中文支援</h2>
-  <p><strong>找車位（Find Parking TW）</strong>顯示<strong>臺北市與新北市</strong>的即時停車位數量，資料直接來自兩市政府的開放資料平臺。</p>
+<section class="en-section" id="english" lang="en">
+  <h2>English</h2>
+  <p><strong>Find Parking TW (找車位)</strong> shows live parking-space counts for <strong>Taipei City</strong> and <strong>New Taipei City</strong>, straight from the two city governments' open-data platforms.</p>
 
-  <h3>聯絡我們</h3>
-  <p>最快的方式是填寫表單，訊息會直接送到開發者手上。</p>
+  <h3>Get help</h3>
+  <p>The fastest way to reach us is the contact form. It goes straight to the developer.</p>
   <div class="btns">
-    <a class="btn" href="https://jimhsuyc.wixsite.com/tataro/support">聯絡表單 →</a>
-    <a class="btn secondary" href="https://www.facebook.com/tataroApp">Facebook（傳截圖與錄影）</a>
+    <a class="btn" href="https://jimhsuyc.wixsite.com/tataro/support">Contact form →</a>
+    <a class="btn secondary" href="https://www.facebook.com/tataroApp">Facebook (for screenshots &amp; video)</a>
   </div>
-  <p class="note">文字說明請用表單。若要附上<strong>截圖或螢幕錄影</strong>——回報車位數字有誤時這是最有用的東西——請改用 Facebook 粉絲頁，表單無法上傳檔案。</p>
+  <p class="note">Use the form for anything you can describe in words. If you need to attach a <strong>screenshot or screen recording</strong> — the most useful thing you can send about a wrong parking count — use the Facebook page instead, since the form cannot take files.</p>
 
-  <h3>希望加入你的城市？</h3>
-  <p>目前只有<strong>臺北市與新北市</strong>有即時資料，其他地區還沒有資料可顯示。<strong>請告訴我們你需要哪裡</strong>——我們依照提出的人數決定下一個要開通的城市，所以一則訊息是真的有用的。</p>
+  <h3>Want your city covered?</h3>
+  <p>Right now the app has live data for <strong>Taipei City and New Taipei City only</strong>. Outside those two it has nothing to show yet — a gap, not a bug. <strong>Tell us where you need it:</strong> we rank which city to add next by how many people ask, so a single message genuinely counts. <a href="https://jimhsuyc.wixsite.com/tataro/support">Request a city →</a></p>
 
-  <h3>常見問題</h3>
+  <h3>Before you write — the five things people ask</h3>
   <dl>
-    <dt>數字很久沒變，是不是壞了？</dt>
-    <dd>通常不是。<strong>數字不是我們數的</strong>，而是市政府公布的。當市府的資料停止更新，數字就會停住，而 App 會老實告訴你：剛更新的數字是<strong>綠色</strong>，開始過時的會<strong>轉為灰色</strong>。那個大數字的<strong>顏色代表新鮮度</strong>，<strong>字級大小代表剩的位子有多少</strong>。</dd>
+    <dt>A number has not changed in a while. Is the app stuck?</dt>
+    <dd>Almost certainly not. <strong>The app does not count spaces itself</strong> — it shows what the city government publishes. When a city's feed goes quiet the number sits still, and the app says so rather than hiding it: a fresh count is <strong>green</strong>, an aging or stale one <strong>fades to grey</strong>. Colour on that big number means <em>freshness</em>; its size means <em>how few spaces are left</em>.</dd>
 
-    <dt>某個停車場顯示「−」或沒有數字。</dt>
-    <dd>表示該停車場在市府名單內，但<strong>沒有回報即時數量</strong>，多半是營運單位正在交接，通常會自行恢復。我們選擇照樣顯示，讓你知道這個停車場存在。</dd>
+    <dt>A car park shows “−” or no number at all.</dt>
+    <dd>That lot is in the city's list but is <strong>not reporting a live count</strong> — usually a lot whose operator is mid-handover, and it tends to come back on its own. We show it rather than dropping it, so you know the lot exists.</dd>
 
-    <dt>我還沒到臺北，可以先看看嗎？</dt>
-    <dd>可以。選一個<strong>目的地</strong>，地圖、搜尋與追蹤清單都會以該地運作，不必人在當地。</dd>
+    <dt>I am not in Taipei yet. Can I still see how it works?</dt>
+    <dd>Yes. Pick a <strong>destination</strong> and the whole app works from there — map, search and your watch list — before you ever arrive.</dd>
 
-    <dt>為什麼需要定位？</dt>
-    <dd>只為了顯示你附近的停車場。<strong>僅在使用 App 時取用</strong>，絕不用於追蹤或建立個人輪廓；你也可以拒絕定位，改用搜尋或指定目的地。詳見<a href="https://jimhsuyc.wixsite.com/tataro/privacy-policy">隱私權政策</a>。</dd>
+    <dt>Why does it want my location?</dt>
+    <dd>Only to show what is near you. It is used <strong>while the app is open and not otherwise</strong>, never to track you or build a profile, and you can decline it and still use the app by searching or picking a destination. Details: <a href="https://jimhsuyc.wixsite.com/tataro/privacy-policy">privacy policy</a>.</dd>
 
-    <dt>可以移除廣告嗎？</dt>
-    <dd>可以，訂閱後會關閉廣告橫幅。這也是訂閱唯一改變的事，其他功能訂不訂閱都一樣。</dd>
+    <dt>Can I remove the ads?</dt>
+    <dd>Yes — a subscription turns off the banner. It is the only thing a subscription changes; every other feature is the same either way.</dd>
   </dl>
 
-  <h3>回報資料有誤</h3>
-  <p>如果數字看起來不對，最有幫助的訊息包含：<strong>哪一個停車場</strong>、<strong>大約什麼時候看的</strong>，以及<strong>你到現場時實際的情況</strong>。附上截圖更好。若是<strong>資料來源本身</strong>就有誤，也歡迎告訴我們，我們會轉達給主管機關。</p>
+  <h3>Reporting something wrong</h3>
+  <p>If a count looks wrong, the most useful message names <strong>the car park</strong>, <strong>roughly when</strong> you looked, and <strong>what you actually found</strong> when you got there. A screenshot through the Facebook page beats all of it. Counts that are wrong <em>at the source</em> are worth telling us about too — we pass those to the city.</p>
 </section>
 
 <footer>
-  <p><strong>Find Parking TW · 找車位</strong> — <a href="https://jimhsuyc.wixsite.com/tataro/privacy-policy">Privacy Policy / 隱私權政策</a></p>
-  <p>Parking data is provided by 臺北市政府 and 新北市政府 via their open-data platforms, under 政府資料開放授權條款－第1版 (Open Government Data License, version 1.0). The city governments are not responsible for how this app presents their data.</p>
-  <p>Last updated 2026-10-08.</p>
+  <p><strong>找車位 · Find Parking TW</strong> — <a href="https://jimhsuyc.wixsite.com/tataro/privacy-policy">隱私權政策 / Privacy Policy</a></p>
+  <p>停車資料由<strong>臺北市政府</strong>與<strong>新北市政府</strong>透過開放資料平臺提供，依「政府資料開放授權條款－第1版」使用。本 App 呈現資料的方式與各市政府無關。</p>
+  <p class="note">Parking data provided by 臺北市政府 and 新北市政府 via their open-data platforms, under 政府資料開放授權條款－第1版 (Open Government Data License v1.0). The city governments are not responsible for how this app presents their data.</p>
+  <p>最後更新 / Last updated 2026-10-08.</p>
 </footer>
 
 </div>
