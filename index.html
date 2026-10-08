@@ -1,1 +1,115 @@
-hello world
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>找車位 Find Parking TW</title>
+<meta name="description" content="找車位（Find Parking TW）— 臺北市與新北市的即時停車位資訊。Live parking-space counts for Taipei City and New Taipei City.">
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1b1b1f; --muted:#5d5d66; --line:#e3e3e8;
+    --card:#f7f7f9; --accent:#1f7a3d; --accent-fg:#ffffff; --link:#1456b8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#15161a; --fg:#eceef2; --muted:#a2a4ad; --line:#2c2e35;
+           --card:#1d1f25; --accent:#3fa968; --accent-fg:#0d1510; --link:#79aeff; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei","Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:44rem; margin:0 auto; padding:3rem 1rem 4rem}
+  .langbar{display:flex; justify-content:flex-end; margin-bottom:.75rem}
+  .langbar a{font-size:.9rem; color:var(--link); text-decoration:none; border:1px solid var(--line); border-radius:.4rem; padding:.3rem .65rem}
+  header{border-bottom:1px solid var(--line); padding-bottom:1.5rem; margin-bottom:2rem}
+  h1{font-size:1.9rem; line-height:1.3; margin:0 0 .3rem}
+  h1 .en{display:block; font-size:1rem; font-weight:600; color:var(--muted); margin-top:.25rem}
+  .tagline{color:var(--muted); margin:.6rem 0 0; font-size:1.05rem}
+  h2{font-size:1.2rem; margin:2.5rem 0 .75rem}
+  h3{font-size:1rem; margin:1.4rem 0 .35rem}
+  p,li{margin:.55rem 0}
+  a{color:var(--link)}
+  ul{padding-left:1.25rem}
+  .btns{display:flex; flex-wrap:wrap; gap:.6rem; margin:1.4rem 0}
+  .btn{display:inline-block; background:var(--accent); color:var(--accent-fg);
+       padding:.7rem 1.15rem; border-radius:.55rem; text-decoration:none; font-weight:600}
+  .btn.secondary{background:transparent; color:var(--link); border:1px solid var(--line)}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:.7rem; padding:1.1rem 1.2rem; margin:1.5rem 0}
+  .note{color:var(--muted); font-size:.92rem}
+  hr{border:0; border-top:1px solid var(--line); margin:3rem 0 2rem}
+  footer{margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem}
+  .en-section h2:first-child{margin-top:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="langbar"><a href="#english">English ↓</a></div>
+
+<header>
+  <h1>找車位<span class="en">Find Parking TW</span></h1>
+  <p class="tagline"><strong>臺北市</strong>與<strong>新北市</strong>的即時停車位數量，資料直接來自兩市政府的開放資料平臺。</p>
+</header>
+
+<h2>這個 App 做什麼</h2>
+<ul>
+  <li><strong>即時剩餘車位</strong>——不是我們數的，是市政府公布的。</li>
+  <li><strong>老實標示新鮮度</strong>。剛更新的數字是綠色，開始過時的會轉為灰色。數字的<strong>顏色代表新鮮度</strong>，<strong>大小代表剩的位子有多少</strong>。資料停更時我們不會假裝它還是新的。</li>
+  <li><strong>還沒到也能用</strong>。選一個目的地，地圖、搜尋與追蹤清單都會以該地運作，不必人在當地。</li>
+  <li><strong>追蹤清單</strong>。把常去的停車場釘起來，一眼看完。</li>
+</ul>
+
+<div class="card">
+  <h3 style="margin-top:0">目前只有臺北市與新北市</h3>
+  <p>其他地區還沒有資料可以顯示。這是還沒做到，不是壞掉——而我們依照提出的人數決定下一個開通的城市。</p>
+  <p><strong>請告訴我們你需要哪裡。</strong></p>
+  <div class="btns">
+    <a class="btn" href="findparkingtw/support/#request-a-city">告訴我們你需要的城市 →</a>
+  </div>
+</div>
+
+<h2>需要協助？</h2>
+<div class="btns">
+  <a class="btn secondary" href="findparkingtw/support/">支援與常見問題 →</a>
+  <a class="btn secondary" href="https://jimhsuyc.wixsite.com/tataro/privacy-policy">隱私權政策</a>
+</div>
+
+<!--
+  上架後在這裡加入 App Store 連結（一個 <a class="btn"> 就夠）。
+  TO ADD AFTER LAUNCH: the App Store link. One <a class="btn" href="…"> in the .btns
+  block above is enough. Deliberately absent for now rather than a dead or invented
+  link — nothing on this page claims the app is available yet.
+-->
+
+<hr>
+
+<section class="en-section" id="english" lang="en">
+  <h2>English</h2>
+  <p><strong>Find Parking TW (找車位)</strong> shows live parking-space counts for <strong>Taipei City</strong> and <strong>New Taipei City</strong>, straight from the two city governments' open-data platforms.</p>
+
+  <h3>What it does</h3>
+  <ul>
+    <li><strong>Live space counts</strong> — we do not count them ourselves; the city governments publish them.</li>
+    <li><strong>Honest about freshness.</strong> A fresh count is green; an aging one fades to grey. Colour means <em>freshness</em>, size means <em>how few spaces are left</em>. When a city's feed goes quiet we say so rather than pretending the number is current.</li>
+    <li><strong>Works before you arrive.</strong> Pick a destination and the whole app works from there — map, search and watch list — without being in the city.</li>
+    <li><strong>A watch list</strong> for the car parks you use often.</li>
+  </ul>
+
+  <h3>Taipei City and New Taipei City only, for now</h3>
+  <p>Outside those two the app has nothing to show yet — a gap, not a bug. We rank which city to add next by how many people ask for it, so <a href="findparkingtw/support/#request-a-city">telling us where you need it</a> genuinely counts.</p>
+
+  <h3>Need help?</h3>
+  <p><a href="findparkingtw/support/">Support and FAQ</a> · <a href="https://jimhsuyc.wixsite.com/tataro/privacy-policy">Privacy policy</a></p>
+</section>
+
+<footer>
+  <p>停車資料由<strong>臺北市政府</strong>與<strong>新北市政府</strong>透過開放資料平臺提供，依「政府資料開放授權條款－第1版」使用。本 App 呈現資料的方式與各市政府無關。</p>
+  <p class="note">Parking data provided by 臺北市政府 and 新北市政府 via their open-data platforms, under 政府資料開放授權條款－第1版 (Open Government Data License v1.0). The city governments are not responsible for how this app presents their data.</p>
+  <p>最後更新 / Last updated 2026-10-08.</p>
+</footer>
+
+</div>
+</body>
+</html>
